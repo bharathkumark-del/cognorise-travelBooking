@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,400&family=Roboto+Condensed:wght@300&family=Roboto+Mono:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Playfair Display', serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Mono', monospace;
+}
+
+#navbar {
+    background: white;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 700;
+    color: rgb(32, 23, 105);
+    text-shadow: 0px 1 px 1px black;
+    margin-bottom: 5px;
+}
+
+#logo span {
+    color: red;
+}
+
+.navbar-toggler span {
+    color: red;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    margin: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(32, 23, 105);
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-item .nav-link:hover {
+    background: red;
+    color: white;
+    font-weight: 700;
+}
+
+#navbar form button {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+#navbar form button:hover {
+    background-color:white;
+    border: 2px solid red;
+    font-weight: 600;
+    color: red;
+}
+.home{
+    width: 100%;
+    height: 95vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/background\ img.png);
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 400;
+    text-shadow: 0px 1px 1px black;
+
+}
+.home .content h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecountent::after{
+    content: '';
+    color: red;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext{
+    0%{content: "India";}
+    10%{content: "France";}
+    20%{content: "United States";}
+    30%{content: "China";}
+    40%{content: "Pakistan";}
+    50%{content: "Italy";}
+    60%{content: "Turkey";}
+    70%{content: "Mexico";}
+    80%{content: "Spain";}
+    90%{content: "Germany";}
+    100%{content: "United Kingdom";}
+    
+}
+
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 6px;
+}
+.home .content a{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: 'Poppins', sans-serif;
+    transition: 1s;
+}
+.home .content a:hover{
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 30px;
+    }
+    .home .content p{
+        font-size: 12px;
+    }
+
+}
+.book{
+    background-color: white;
+    padding: 50px;
+    overflow: hidden;
+}
+.main-text h1{
+    text-align: center;
+    color: rgb(32, 23, 105);
+
+    text-shadow: 0px 1px 1px black ;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: red;
+}
+.book .card{
+    width: 600px;
+    height: 500px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 15px  black ;
+
+}
+.book .card img{
+    border-radius: 10px;
+    border-color: 3px red;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px -6px black ;
+}
+.book form textarea{
+    border: none;
+    resize: none;
+    font-size: 15px;
+    border-radius: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 10px -6px black ;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    background: red;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s ;
+}
+.book .submit:hover{
+    width: 166px;
+    font-weight: 700;
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
+@media (max-width:750px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+    .book .card{
+        padding: 10px;
+        width: 400px;
+        height: 300px; 
+    }
+    .book .card img{
+        width: 400px;
+        height: 300px;
+    }
+}
+.str{
+    width: 200px;
+    height: 40px;
+}
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(32, 23, 105);
+
+    margin-bottom: 30px;
+    font-weight: 600px;
+    text-shadow: 0px 1px 1px -6px black;
+}
+.main-txt h1 span{
+    color: red;
+}
+.packages .card{
+    margin-left: 80px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s ease;
+    box-shadow: rgba(0,0,0,0.3) 0px 4px 12px;
+}
+.packages .card:hover{
+    transform: scale(1.1);
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 700;
+
+}
+.packages .card .card-body p{
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: red;
+    border-radius: 6px;
+    font-size: 20px;
+    color: white;
+}
+.packages .card .card-body a:hover{
+    font-weight: 700;
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
+.services{
+    background: white;
+    margin-top: 50px;
+
+}
+.services .card{
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.3) 0px 4px 12px;
+
+}
+#hotal{
+    width: 100px;
+    padding-left: 50;
+    margin-left: 40%;
+    margin-top: 20px;
+}
+#tit{
+    text-align: center;
+    color: red;
+    
+}
+#Guide{
+    padding: 3px;
+    box-shadow: rgba(0,0,0,0.4) 0px 4px 12px;
+
+}
+#tits{
+    text-align: center;
+    
+}
+
+
+.services .card .card-body {
+    text-align: center;
+}
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.4) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+.about{
+    margin-top: 50px;
+    background: white;
+}
+.about .card {
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p {
+    font-weight:400 ;
+}
+#about-btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-weight: 550;
+
+transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 166px;
+    font-weight: 700;
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
+.re img{
+    border-radius: 10px;
+    
+}
+.re{
+    display: flex;
+    gap: 30px;
+
+}
+@media (max-width:750px){
+    .about{
+        padding: 0;
+    }
+
+}
+.social-links img{
+    width: 60px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+.footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align:center;
+    background: white;
+}
+.footer h1{
+    color: rgb(32, 23, 105);
+
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+.footer h1 span{
+    color: red;
+}
